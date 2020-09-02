@@ -16,25 +16,46 @@
   <link rel="stylesheet" href="lib/bootstrap-4.5.2-dist/css/bootstrap.min.css"
 </head>
 
-<body>
+<body class="all"> 
   <div class="container">
 
     <div class="row">
-      <div class="col-12">
-        <div class="jumbotron">
-        <center>  <h2> Calculador de calorias </h2> </center>
+      <div class="col-12" "sm-12">
+       
+      
+        <center>  <h1 class="cal"> CALCULADOR DE CALORIAS </h1> </center>
         </div> 
+        <div  </div>
       </div> 
    </div>
-
+                        
     <div class="row">
       <div class="col-12">
         <div class="form-group">
-          <center><label for=""> Calorias Consumidas Hoje: </label></center>
+          <center> <label class="box" for=""> Insirra suas Calorias Consumidas Hoje: </label></center>
             <input type="number" class="form-control" id="valor1">     
         </div>
       </div>
     </div>
+
+ <center> Qual o seu Sexo?<br> <select name="sexo" value = "Sexo">
+		
+		<option value="M">Masculino</option>
+		<option value="F">Feminino</option>
+
+	        </select>
+          <br>
+
+          Qual Grupo você se encaixa? <select name="GP" value = "gp">
+		
+		<option value="1">Sedentários</option>
+		<option value="2">Levemente Ativo</option>
+    <option value="3">Moderadamente Ativo</option>
+		<option value="4">Altamente Ativo</option>
+    <option value="5">Extremamente Ativo</option>
+		
+
+	        </select> </center>
 
 <center><h1> + </h1></center>
 
@@ -51,13 +72,14 @@
       <div class="col-12">
         <div class="form-group">
           <center><label for=""> Calorias: </label></center>
-            <div id ="resultado"> </div>     
+           <center> <div class="res" id ="resultado"> </div>     
         </div>
       </div>
     </div>
 
+     <div class="reco"> A dieta das 1200 calorias é feita com o objetivo de promover o emagrecimento, uma vez que faz com que o organismo utilize o estoque de gordura como fonte de energia. </div>
   </div>
 
-</body>
+</body> 
 
 </html>

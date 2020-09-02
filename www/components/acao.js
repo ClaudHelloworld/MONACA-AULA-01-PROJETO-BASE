@@ -5,7 +5,7 @@ $(document).on("click","#somar",function(){
 
   if (valor1  <= 1200){
     var cal = 1200 - valor1;
-    var resultado = "Você ainda precisa ou, já está no seu limite de calorias, Restantes = " +  cal; 
+    var resultado = "Você ainda precisa ou, já está no seu limite de calorias, Restantes = " +  cal ; 
   }
 
   else{
