@@ -2,11 +2,11 @@
 
 $(document).on("click",'#somar',function(){
   
-     var sexo = parseFloat($("#option:selected", ("#sexo")).val());
+     var sexo = $("option:selected",("#sexo")).val();
      var idade = parseFloat($("#idade").val());
      var altura = parseFloat($("#altura").val());
      var peso = parseFloat($("#peso").val());
-     var gp = parseFloat($("#option:selected", ("#gp")).val());
+     var gp = parseFloat($("option:selected", ("#gp")).val());
 
 if(sexo=="M"){
   var resultado = gp * (66+( (13.7 * peso) + (5* altura) - (6.8 * idade) ) );
@@ -17,7 +17,7 @@ else{
  
  
 
-    $("#resultado").val(resultado.toFixed(2));
-    console.log(resultado);
+    $("#resultado").text(resultado.toFixed(2));
+    console.log(sexo);
 });
 
